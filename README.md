@@ -66,7 +66,7 @@ static LGFX lcd;            // declare display variable
 
 extern "C"
 {
-    void setup(void)
+    void app_main(void)
     {
         lcd.init();
 
@@ -83,8 +83,8 @@ extern "C"
                 lcd.printf("Touch:(%03d,%03d)", x,y);
             }
         }
+    }
 }
-
 
 ```
 
